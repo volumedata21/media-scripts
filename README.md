@@ -40,5 +40,7 @@ It will ask you to enter a page from https://thediscdb.com/ and then for the loc
 # Problems with script finding file location
 If the script throws an error when specifying the file location, you can put the script file in the folder with your files. Then, when it asks for the location just put "." with no quotation marks. The period just signifies it will look for files in the same folder with the script file. So if you put the script in ```/media/myfiles/discdb_rename.py``` and your media files are in ```/media/myfiles/``` then the script will look for files in ```/media/myfiles``` if you enter "." for the location.
 
+In my experience this can occur when specifying a location that's not on the local machine, like an SMB mount.
+
 # Pull Requests
 I'm able to get my hands a little dirty in scripting but I am not a programmer. I'm making revisions as I see problems arise. I am not a developer though and my knowledge is a little limited in programming in python. Or programming. But I'll do my best to review any pull requests and merge in fixes. I'm open to suggestions.

@@ -1,5 +1,5 @@
 # How it Works
-This script uses information from thediscdb.com to rename files in a media-server friendly format. It attempts to rename files based on the length of each file. If multiple files have the same length it then tries by file size. If that doesn't work, it does not rename the files. The script was mostly done using ChatGPT and my very limited Python knowledge.
+This script uses information from [thediscdb.com](https://thediscdb.com/) to rename files in a media-server friendly format from discs burned by MakeMKV. It attempts to rename files based on the length of each file. If multiple files have the same length it then tries by file size. If that doesn't work, it does not rename the files. The script was mostly done using ChatGPT and my very limited Python knowledge.
 
 # Features:
 * Rename files based on Plex naming standards
@@ -7,8 +7,12 @@ This script uses information from thediscdb.com to rename files in a media-serve
 * Works with extras
 * Works with multiple movie versions, IE director's cut and theatrical release.
 
-## Important: Organize by Disc
+# Important
+### Organize by Disc
 Before running the script, make sure your media is organized by disc. If renaming files from Miami Vice, season 3, disc 1, make sure those files are in a seperate folder from Miami Vice, season 3, disc 2. Having files from multiple discs in the same folder can increase chance of naming errors.
+### File Types
+The script assumes files are MKV files from the disc. If you compressed files it may be able to determine correct names based on length, but not file size. It is recommended to compress **after** renaming. 
+
 
 # How to Use
 The following instructions should work on Linux. If using MacOS, you can get it working using Brew to download python/ffmpeg/beautifulsoup4.

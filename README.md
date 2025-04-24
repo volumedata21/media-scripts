@@ -1,5 +1,5 @@
 ## How to Use
-The following instructions should work on Linux, possibly MacOS. Download the discdb_rename.py file. Open up a terminal window, navigate to the folder with the script, and then just use the command ```python3 dbdisc_rename.py``` and the script will work. 
+The following instructions should work on Linux, possibly MacOS. You can either download the discdb_rename.py file, or just make a text file and name it discdb_rename.py and copy the text from my file into yours. Open up a terminal window, navigate to the folder with the script, and then just use the command ```python3 dbdisc_rename.py``` and the script will work. 
 
 For example if the script is in /home/user/discdb_rename.py, you can open up a terminal window and type in 
 

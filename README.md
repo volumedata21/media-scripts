@@ -9,7 +9,7 @@ This script uses information from [thediscdb.com](https://thediscdb.com/) to ren
 
 # Important
 ### Organize by Disc
-Before running the script, make sure your media is organized by disc. If renaming files from Miami Vice, season 3, disc 1, make sure those files are in a seperate folder from Miami Vice, season 3, disc 2. Having files from multiple discs in the same folder can increase chance of naming errors.
+Before running the script, make sure your media is organized by disc. If renaming files from *Miami Vice, season 3, disc 1*, make sure those files are in a seperate folder from *Miami Vice, season 3, disc 2*. Having files from multiple discs in the same folder can increase chance of naming errors.
 ### File Types
 The script assumes files are MKV files from the disc. If you compressed files it may be able to determine correct names based on length, but not file size. It is recommended to compress **after** renaming. 
 
@@ -19,7 +19,7 @@ The following instructions should work on Linux. If using MacOS, you can get it 
 
 You can either download the discdb_rename.py file, or just make a text file and name it discdb_rename.py and copy the text from my file into yours. Open up a terminal window, navigate to the folder with the script, and then just use the command ```python3 dbdisc_rename.py``` and the script will run. 
 
-For example if the script is in /home/user/discdb_rename.py, you can open up a terminal window and type in 
+For example if the script is in ```/home/user/discdb_rename.py```, you can open up a terminal window and type in 
 
 ```
 cd /home/user
@@ -39,7 +39,7 @@ sudo apt install python3 python3-pip ffmpeg **
 pip3 install requests beautifulsoup4
 ```
 
-It will ask you to enter a page from https://thediscdb.com/ and then for the location of your media files. If, for example, you were renaming files from Miami Vice, Season 2, Disc 1, just specify the URL for that disc from thediscdb when it asks for the URL.
+It will ask you to enter a page from https://thediscdb.com/ and then for the location of your media files. If, for example, you were renaming files from *Miami Vice, Season 2, Disc 1*, just specify the URL for that disc from thediscdb when it asks for the URL.
 
 # Problems with script finding file location
 If the script throws an error when specifying the file location, you can put the script file in the folder with your files. Then, when it asks for the location just put ```.``` and nothing else. The period signifies it will look for files in the same folder with the script file. If you put the script in ```/media/myfiles/discdb_rename.py``` then the script will look for files in ```/media/myfiles``` if you enter ```.``` for the location.
